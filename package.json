@@ -2,6 +2,7 @@
 	"name":		"uname",
 	"version":	"0.0.1",
 	"description":	"SUSv3 uname binding",
+	"homepage":	"https://github.com/davepacheco/node-uname",
 	"author":	"Dave Pacheco (dap@cs.brown.edu)",
 	"engines":	{ "node": "*" },
 	"main":		"./build/default/uname",
