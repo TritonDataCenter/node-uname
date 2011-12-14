@@ -1,11 +1,11 @@
 {
 	"name":		"uname",
-	"version":	"0.0.1",
+	"version":	"0.0.2",
 	"description":	"SUSv3 uname binding",
 	"homepage":	"https://github.com/davepacheco/node-uname",
 	"author":	"Dave Pacheco (dap@cs.brown.edu)",
-	"engines":	{ "node": "*" },
-	"main":		"./build/default/uname",
+	"engines":	{ "node": ">=0.6" },
+	"main":		"./build/Release/uname",
 	"scripts": {
 		"install": "node-waf configure build"
 	}
