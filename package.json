@@ -1,12 +1,19 @@
 {
-	"name":		"uname",
-	"version":	"0.0.2",
-	"description":	"SUSv3 uname binding",
-	"homepage":	"https://github.com/davepacheco/node-uname",
-	"author":	"Dave Pacheco (dap@cs.brown.edu)",
-	"engines":	{ "node": ">=0.6" },
-	"main":		"./build/Release/uname",
+	"name": "uname",
+	"version": "0.0.2",
+	"description": "SUSv3 uname binding",
+	"homepage": "https://github.com/davepacheco/node-uname",
+	"author": "Dave Pacheco (dap@cs.brown.edu)",
+	"engines": {
+		"node": ">=0.6"
+	},
+	"main": "./build/Release/uname",
 	"scripts": {
 		"install": "node-waf configure build"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/davepacheco/node-uname.git"
 	}
 }
