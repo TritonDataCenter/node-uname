@@ -1,4 +1,3 @@
-
 node-uname
 ==============
 
@@ -15,12 +14,6 @@ should test for the presence of specific features rather than hardcode which
 system releases support those features.
 
 
-Status
-------
-
-Complete.  No further updates planned.
-
-
 Platforms
 ---------
 
@@ -32,17 +25,15 @@ Mac OS X (tested on 10.6.5) and OpenSolaris build 147.
 Installation
 ------------
 
-As an addon, node-uname is installed in the usual way:
+As a module, node-uname is installed in the usual way:
 
-      # node-waf configure
-      # node-waf build
-      # node-waf install
+      $ npm install uname
 
 
 API
 ---
 
-### `uname()`
+### `uname.uname()`
 
 Returns an object with string members corresponding to the fields of `struct
 utsinfo` as described by the standard.  For convenience, these are described

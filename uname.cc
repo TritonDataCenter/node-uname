@@ -38,3 +38,5 @@ init (Handle<Object> target)
 
 	target->Set(String::NewSymbol("uname"), templ->GetFunction());
 }
+
+NODE_MODULE(binding, init);

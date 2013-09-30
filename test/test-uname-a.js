@@ -1,4 +1,4 @@
-var mod_uname = require('uname');
+var mod_uname = require('../build/Release/binding.node');
 var mod_cp = require('child_process');
 var ASSERT = require('assert');
 

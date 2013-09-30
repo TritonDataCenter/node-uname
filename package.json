@@ -4,16 +4,21 @@
 	"description": "SUSv3 uname binding",
 	"homepage": "https://github.com/davepacheco/node-uname",
 	"author": "Dave Pacheco (dap@cs.brown.edu)",
-	"engines": {
-		"node": ">=0.6"
-	},
-	"main": "./build/Release/uname",
+	"contributors": [
+            {
+                  "name": "Kenan Sulayman",
+                  "email": "kenan@sly.mn"
+            }
+	],
+	"keywords": [ "uname", "version", "name", "binding", "susv3" ],
+	"main": "./build/Release/binding.node",
 	"scripts": {
-		"install": "node-waf configure build"
+        	"test": "node ./test/test-uname-a.js"
 	},
 	"license": "MIT",
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/davepacheco/node-uname.git"
-	}
+	},
+	"gypfile": true
 }
