@@ -7,13 +7,11 @@
 	"engines": {
 		"node": ">=0.6"
 	},
-	"main": "./build/Release/uname",
-	"scripts": {
-		"install": "node-waf configure build"
-	},
+	"main": "./build/Release/binding.node",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/davepacheco/node-uname.git"
-	}
+	},
+	"gypfile": true
 }
