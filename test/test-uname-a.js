@@ -4,11 +4,11 @@ var ASSERT = require('assert');
 
 var uts = mod_uname.uname();
 var fields = {
-	sysname: "-s",
-	nodename: "-n",
-	release: "-r",
-	version: "-v",
-	machine: "-m"
+	sysname: '-s',
+	nodename: '-n',
+	release: '-r',
+	version: '-v',
+	machine: '-m'
 };
 
 var field, nfields;
@@ -22,20 +22,20 @@ for (field in fields) {
 	check(field);
 }
 
-function check(field)
+function check(checkfield)
 {
-	var exec = 'uname ' + fields[field];
+	var exec = 'uname ' + fields[checkfield];
 
 	mod_cp.exec(exec, function (err, stdout, stderr) {
 		var value;
 
-		console.log('checking field "%s" with %s', field, exec);
+		console.log('checking field "%s" with %s', checkfield, exec);
 		ASSERT.ok(err === null, 'invocation failed');
 
 		/* Chop trailing newline. */
 		value = stdout.substring(0, stdout.length - 1);
 		console.log('expected output: "%s"', value);
-		console.log('actual output: "%s"', uts[field]);
-		ASSERT.ok(value === uts[field], 'value mismatch');
+		console.log('actual output: "%s"', uts[checkfield]);
+		ASSERT.ok(value === uts[checkfield], 'value mismatch');
 	});
 }
